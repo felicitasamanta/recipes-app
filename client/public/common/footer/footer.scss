@@ -1,0 +1,139 @@
+@use "../variables" as *;
+
+body {
+  font-family: $font-family;
+}
+
+.footer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: $colored-background;
+  color: $base-color;
+
+  h5 {
+    font-size: 24px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $line;
+    width: 40%;
+    margin-right: 100px;
+  }
+
+  .sides {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .fLeft {
+      padding-top: 10px;
+      width: 40%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-grow: 1;
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+
+    .middle {
+      width: 10%;
+    }
+    .fRight {
+      width: 50%;
+      flex-grow: 1;
+      background-color: $base-color;
+      border-radius: $card-border-radius;
+      color: $light-background;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      form {
+        width: 100%;
+        p {
+          padding-bottom: 20px;
+        }
+
+        .subscription {
+          display: flex;
+          gap: 15px;
+
+          button,
+          input {
+            padding: 10px 20px;
+            border-radius: $button-border-radius;
+            outline: none;
+            cursor: pointer;
+            border: none;
+          }
+
+          input {
+            width: 100%;
+            background-color: transparent;
+            border: $light-border;
+
+            &::placeholder {
+              color: $light-background;
+            }
+          }
+
+          .input {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+          }
+
+          button {
+            width: 25%;
+            background-color: $dark-text;
+            color: $light-background;
+            align-self: flex-start;
+          }
+        }
+      }
+    }
+  }
+  .error {
+    padding: 5px;
+    color: red;
+    min-height: 20px;
+    font-size: 12px;
+  }
+
+  dialog {
+    background-color: $base-color;
+    border: none;
+    text-align: center;
+    font-size: 50px;
+    color: $light-background;
+
+    &::backdrop {
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    button {
+      background-color: transparent;
+      font-size: 24px;
+      font-weight: bold;
+      border: none;
+      outline: none;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+
+    .close {
+      cursor: pointer;
+    }
+  }
+}

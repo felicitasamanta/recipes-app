@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #e4d8ab;
+  color: #647403;
+}
+.footer h5 {
+  font-size: 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c1c694;
+  width: 40%;
+  margin-right: 100px;
+}
+.footer .sides {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.footer .sides .fLeft {
+  padding-top: 10px;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.footer .sides .fLeft nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer .sides .middle {
+  width: 10%;
+}
+.footer .sides .fRight {
+  width: 50%;
+  flex-grow: 1;
+  background-color: #647403;
+  border-radius: 20px;
+  color: #f9f7eb;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer .sides .fRight form {
+  width: 100%;
+}
+.footer .sides .fRight form p {
+  padding-bottom: 20px;
+}
+.footer .sides .fRight form .subscription {
+  display: flex;
+  gap: 15px;
+}
+.footer .sides .fRight form .subscription button,
+.footer .sides .fRight form .subscription input {
+  padding: 10px 20px;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.footer .sides .fRight form .subscription input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #f3f0e1;
+}
+.footer .sides .fRight form .subscription input::-moz-placeholder {
+  color: #f9f7eb;
+}
+.footer .sides .fRight form .subscription input::placeholder {
+  color: #f9f7eb;
+}
+.footer .sides .fRight form .subscription .input {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.footer .sides .fRight form .subscription button {
+  width: 25%;
+  background-color: #101010;
+  color: #f9f7eb;
+  align-self: flex-start;
+}
+.footer .error {
+  padding: 5px;
+  color: red;
+  min-height: 20px;
+  font-size: 12px;
+}
+.footer dialog {
+  background-color: #647403;
+  border: none;
+  text-align: center;
+  font-size: 50px;
+  color: #f9f7eb;
+}
+.footer dialog::backdrop {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.footer dialog button {
+  background-color: transparent;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.footer dialog .close {
+  cursor: pointer;
+}/*# sourceMappingURL=footer.css.map */

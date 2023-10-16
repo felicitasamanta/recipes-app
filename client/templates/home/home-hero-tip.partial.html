@@ -1,0 +1,19 @@
+<div class="left">
+  <h1>{{title}}</h1>
+  <p class="description">{{description}}</p>
+  <div class="bottom">
+    <div class="buttons">
+      {{#each categories}}
+      <button>{{this}}</button>
+      {{/each}}
+    </div>
+    <p id="readTime">12 min read</p>
+  </div>
+
+  <div class="readNow">
+    <a href="/tips/{{id}}">READ NOW</a>
+  </div>
+</div>
+<div class="right">
+  <img src="{{img}}" alt="{{title}}" />
+</div>

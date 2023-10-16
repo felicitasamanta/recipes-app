@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    {{{commonStyles}}}
+    <link rel="stylesheet" href="/recipes/recipe.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    {{{navigation}}}
+    <section class="hero">
+      <img class="img" src="{{img}}" />
+      <div class="hero_overlay">
+        <div class="hero_content">
+          <h1>{{title}}</h1>
+          <p>by {{author}}</p>
+          <span class="rate stars-{{rate}}">
+            <span class="fa fa-star rate-star"></span>
+            <span class="fa fa-star rate-star"></span>
+            <span class="fa fa-star rate-star"></span>
+            <span class="fa fa-star rate-star"></span>
+            <span class="fa fa-star rate-star"></span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section id="description">
+      <div class="description wrapper"><p>{{long_description}}</p></div>
+    </section>
+
+    <section id="ingredients">
+      <div class="section-title wrapper">
+        <div class="line"></div>
+        <h2>INGREDIENTS</h2>
+      </div>
+      <div class="ingredients-position">
+        <div class="space"></div>
+        <div class="ingredients">
+          {{#each ingredients}}
+          <p>{{this.amount}} - {{this.item}}</p>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+
+    <section id="preparation">
+      <div class="wrapper">
+        <h2>PREPARATION</h2>
+        <div class="preparation">
+          <div class="steps">
+            {{#each preparation}}
+            <div class="step">
+              <h3><span>{{step}}</span></h3>
+
+              <p>{{description}}</p>
+            </div>
+            {{/each}}
+          </div>
+          <div class="img">
+            <img src="{{img_vertical}}" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{{footer}}}
+  </body>
+</html>

@@ -1,0 +1,67 @@
+@use "../common/variables" as *;
+
+body {
+  font-family: $font-family;
+}
+
+li {
+  max-width: calc((100% - 80px) / 4);
+  border-radius: 20px;
+  background-color: white;
+  border: $light-border;
+  box-shadow: $box-shadow;
+
+  &:hover {
+    background-color: $hover-on-card-background;
+  }
+
+  h2 {
+    padding: 20px;
+    font-size: 24px;
+    color: $base-color;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    .description {
+      line-height: 1.1;
+      font-size: 16px;
+      border-bottom: 1px solid $base-color;
+      color: $description-text;
+      padding: 20px 10px;
+    }
+
+    .bottom {
+      padding: 20px 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      button {
+        color: $base-color;
+        background-color: transparent;
+        border: 1px solid $dark-text;
+        border-radius: $button-border-radius;
+        outline: none;
+        padding: 5px 15px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      .readTime {
+        color: $base-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  color: #fffef6;
+  background-color: #647403;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header h1 {
+  font-size: 28px;
+  cursor: pointer;
+}
+header nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+header nav a {
+  color: #fffef6;
+  text-decoration: none;
+}
+header nav a img {
+  cursor: pointer;
+}/*# sourceMappingURL=navigation.css.map */

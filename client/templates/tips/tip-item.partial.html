@@ -1,0 +1,17 @@
+<a href="/tips/{{id}}">
+  <h2>{{title}}</h2>
+  <div class="img">
+    <img src="{{img}}" />
+  </div>
+  <div class="content">
+    <p class="description">{{description}}</p>
+    <div class="bottom">
+      <div class="buttons">
+        {{#each categories}}
+        <button>{{this}}</button>
+        {{/each}}
+      </div>
+      <p class="readTime">{{readTime}}</p>
+    </div>
+  </div>
+</a>

@@ -1,0 +1,39 @@
+@use "../variables" as *;
+
+body {
+  font-family: $font-family;
+}
+
+header {
+  color: $content-background;
+  background-color: $base-color;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    a {
+      color: $content-background;
+      text-decoration: none;
+
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}

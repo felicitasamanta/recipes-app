@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    {{{commonStyles}}}
+    <link rel="stylesheet" href="/tips/tip.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    {{{navigation}}}
+
+    <section class="hero">
+      <img class="img" src="{{img}}" />
+      <div class="hero_overlay">
+        <div class="hero_content">
+          <p class="description">{{description}}</p>
+          <div class="bottom">
+            <div class="buttons">
+              {{#each categories}}
+              <button>{{this}}</button>
+              {{/each}}
+            </div>
+            <p id="readTime">{{readTime}}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="review">
+      <div id="oneLine" class="wrapper oneLine">
+        <span class="left">&#8220;</span>
+        <div class="wrapper review">
+          <div><p>{{review}}</p></div>
+        </div>
+        <span class="right">&#8221;</span>
+      </div>
+    </section>
+
+    <section id="tips">
+      <div class="wrapper">
+        <div class="steps">
+          {{#each steps}}
+          <div class="stepContainer">
+            <p class="step">{{step}}</p>
+            <div class="information">
+              <h3>{{title}}</h3>
+              <p class="description">{{description}}</p>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+
+    {{{footer}}}
+  </body>
+</html>

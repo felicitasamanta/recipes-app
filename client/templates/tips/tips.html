@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    {{{commonStyles}}}
+    <link rel="stylesheet" href="/tips/tips.css" />
+    <link rel="stylesheet" href="/tips/tips-list-item.css" />
+    <link rel="stylesheet" href="/common/dropdown/dropdown.css" />
+  </head>
+  <body>
+    {{{navigation}}}
+
+    <section class="top wrapper">
+      <h2>{{title}}</h2>
+      <div class="filterArticles">
+        <p>Filter tips</p>
+        <p>{{tips.length}} items</p>
+      </div>
+      <div class="filters">
+        {{> dropdown id=filters.category.id label=filters.category.label
+        selected=filters.category.selected options=filters.category.options}}
+      </div>
+    </section>
+
+    <section class="tips wrapper">
+      <ul>
+        {{#each tips}} {{> tipsListItem }} {{/each}}
+      </ul>
+    </section>
+    {{{footer}}}
+    <script type="module" src="/tips/tips.js"></script>
+    <script type="module" src="/common/dropdown/dropdown.js"></script>
+  </body>
+</html>

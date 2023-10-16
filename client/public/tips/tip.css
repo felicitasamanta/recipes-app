@@ -1,0 +1,134 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+}
+.hero .img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 70vh;
+  width: 100%;
+  transform: rotate(180deg);
+}
+.hero .hero_overlay {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  height: 70vh;
+}
+.hero .hero_overlay .hero_content {
+  color: #fffef6;
+  background-color: #647403;
+  border-radius: 20px;
+  width: 350px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  bottom: 50px;
+  left: 150px;
+}
+.hero .hero_overlay .hero_content .description {
+  line-height: 1.1;
+  font-size: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+.hero .hero_overlay .hero_content .bottom {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .hero_overlay .hero_content .bottom button {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 25px;
+  outline: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#review {
+  background-color: #f9f7eb;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  color: #647403;
+}
+#review #oneLine {
+  display: flex;
+  gap: 20px;
+}
+#review #oneLine span {
+  font-size: 60px;
+}
+#review #oneLine .right {
+  align-self: flex-end;
+}
+#review .review {
+  background-color: #e4d8ab;
+  max-width: 700px;
+  color: #647403;
+  font-size: 24px;
+  padding: 25px 65px;
+  text-align: center;
+  border-radius: 20px;
+  line-height: 1.5;
+}
+
+#tips {
+  padding-top: 100px;
+  background-color: #f9f7eb;
+  color: #647403;
+}
+#tips .steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#tips .steps .stepContainer {
+  width: 100%;
+  display: flex;
+  gap: 100px;
+}
+#tips .steps .stepContainer .step {
+  font-size: 50px;
+  font-weight: bold;
+  transform: translateY(-50%);
+  align-self: flex-start;
+}
+#tips .steps .stepContainer .information {
+  padding: 20px 0px;
+  border-top: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-right: 200px;
+}
+#tips .steps .stepContainer .information h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+#tips .steps .stepContainer .information .description {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  line-height: 1.3;
+  display: flex;
+  width: 480px;
+}/*# sourceMappingURL=tip.css.map */

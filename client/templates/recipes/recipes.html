@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes</title>
+    {{{commonStyles}}}
+    <link rel="stylesheet" href="/recipes/recipes.css" />
+    <link rel="stylesheet" href="/recipes/recipes-list-item.css" />
+    <link rel="stylesheet" href="/common/dropdown/dropdown.css" />
+  </head>
+
+  <body>
+    {{{navigation}}}
+
+    <section class="top wrapper">
+      <h2 class="pageTitle">{{title}}</h2>
+      <div class="filterRecipes">
+        <p>Filter recipes</p>
+        <p>{{recipes.length}} items</p>
+      </div>
+      <div class="filters">
+        {{> dropdown id=filters.category.id label=filters.category.label
+        selected=filters.category.selected options=filters.category.options}}
+      </div>
+    </section>
+
+    <section class="recipes wrapper">
+      <ul>
+        {{#each recipes}} {{> recipeListItem }} {{/each}}
+      </ul>
+    </section>
+
+    {{{footer}}}
+
+    <script type="module" src="/recipes/recipes.js"></script>
+    <script type="module" src="/common/dropdown/dropdown.js"></script>
+  </body>
+</html>

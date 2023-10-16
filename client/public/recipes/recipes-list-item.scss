@@ -1,0 +1,42 @@
+@use "../common/variables" as *;
+
+body {
+  font-family: $font-family;
+}
+
+li {
+  max-width: calc((100% - 80px) / 4);
+  border-radius: 20px;
+  background-color: white;
+  border: $light-border;
+  box-shadow: $box-shadow;
+
+  &:hover {
+    background-color: $hover-on-card-background;
+  }
+
+  h2 {
+    padding: 20px;
+    font-size: 24px;
+    color: $dark-text;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  p {
+    padding: 20px;
+    color: $description-text;
+  }
+
+  .read {
+    color: $dark-text;
+  }
+}

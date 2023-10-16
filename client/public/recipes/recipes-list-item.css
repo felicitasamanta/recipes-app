@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+li {
+  max-width: calc((100% - 80px) / 4);
+  border-radius: 20px;
+  background-color: white;
+  border: 1px solid #f3f0e1;
+  box-shadow: 2px 0px 12px -3px rgba(202, 199, 185, 0.86);
+}
+li:hover {
+  background-color: rgba(202, 199, 185, 0.36);
+}
+li h2 {
+  padding: 20px;
+  font-size: 24px;
+  color: #101010;
+}
+li .img {
+  width: 100%;
+  height: auto;
+}
+li .img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+li p {
+  padding: 20px;
+  color: #b7b7b5;
+}
+li .read {
+  color: #101010;
+}/*# sourceMappingURL=recipes-list-item.css.map */

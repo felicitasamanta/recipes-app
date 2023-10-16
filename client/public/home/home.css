@@ -1,0 +1,299 @@
+body {
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main #readTime {
+  font-size: 12px;
+}
+main .hero {
+  background-color: #647403;
+  display: flex;
+  padding-left: 150px;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+  padding-bottom: 100px;
+}
+main .hero .left {
+  margin-top: 50px;
+  width: 30%;
+}
+main .hero .left h1 {
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+main .hero .left .description {
+  line-height: 1.1;
+  font-size: 30px;
+  width: 350px;
+  padding-bottom: 20px;
+}
+main .hero .right {
+  width: 70%;
+  height: 100%;
+}
+main .hero .right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 45% 0px 0px 45%;
+}
+main .hero .bottom {
+  border-top: 1px solid white;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .hero .bottom button {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 25px;
+  outline: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+main .hero .readNow {
+  margin-top: 20px;
+  width: 130px;
+  background-color: #101010;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+main .first {
+  height: 830px;
+  padding-top: 100px;
+  background-color: #f9f7eb;
+  color: #101010;
+  letter-spacing: 1px;
+}
+main .first .sides {
+  display: flex;
+  gap: 20px;
+}
+main .first button {
+  font-size: 8px;
+  letter-spacing: 1.5px;
+}
+main .first .left {
+  flex-shrink: 0;
+  width: 50%;
+  height: 630px;
+  border-radius: 20px;
+  background-color: #fffef6;
+  border: 1px solid #f3f0e1;
+  cursor: pointer;
+  box-shadow: 2px 0px 12px -3px rgba(202, 199, 185, 0.86);
+}
+main .first .left:hover {
+  background-color: rgba(202, 199, 185, 0.36);
+}
+main .first .left h2 {
+  padding: 20px;
+  font-size: 24px;
+}
+main .first .left .img {
+  width: 100%;
+}
+main .first .left .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .first .right {
+  height: 630px;
+  cursor: pointer;
+  width: 50%;
+}
+main .first .right .containers {
+  justify-content: space-between;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .first .right .container {
+  height: calc((100% - 60px) / 3);
+  border-radius: 20px;
+  border: 1px solid #f3f0e1;
+  box-shadow: 2px 0px 12px -3px rgba(202, 199, 185, 0.86);
+  background-color: #fffef6;
+  display: flex;
+}
+main .first .right .container:hover {
+  background-color: rgba(202, 199, 185, 0.36);
+}
+main .first .right .container .card {
+  flex-grow: 1;
+}
+main .first .right .container .img {
+  padding-left: 20px;
+  height: 188.39px;
+}
+main .first .right .container .img img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .first .right .container h3 {
+  padding: 20px 20px 0px;
+  font-size: 16px;
+}
+main .first .inner {
+  padding: 20px;
+}
+main .first .buttonAndReadTime {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f5efd9;
+}
+main .first .buttonAndReadTime p {
+  color: #6b6a67;
+  font-size: 14px;
+}
+main .first .buttonAndReadTime button {
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid #83837f;
+  border-radius: 25px;
+  cursor: pointer;
+}
+main .first .cardBottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+main .first .cardBottom .roundedImg img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+main .first .cardBottom .personAndDate {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .first .cardBottom .personAndDate P {
+  font-size: 12px;
+}
+
+.inMyKitchen {
+  background-color: #f9f7eb;
+  color: #647403;
+}
+.inMyKitchen h2 span {
+  font-size: 56px;
+  display: flex;
+  align-items: center;
+}
+.inMyKitchen h2 span::after {
+  content: "";
+  flex: 1;
+  margin-left: 1rem;
+  height: 1px;
+  background-color: #c1c694;
+}
+.inMyKitchen .cards {
+  padding: 55px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.inMyKitchen .cards .card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 55px;
+  height: 40px;
+}
+.inMyKitchen .cards .card .icon {
+  background-color: #e4d8ab;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.inSeason {
+  background-color: #f9f7eb;
+  color: #647403;
+  min-height: 400px;
+  padding-top: 60px !important;
+}
+.inSeason h2 {
+  text-align: right;
+}
+.inSeason h2 span {
+  font-size: 56px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.inSeason h2 span::after {
+  content: "";
+  flex: 1;
+  margin-right: 1rem;
+  height: 1px;
+  background-color: #c1c694;
+}
+.inSeason .cards {
+  width: 100%;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.inSeason .cards .card {
+  width: calc((100% - 100px) / 5);
+  cursor: pointer;
+  flex-grow: 1;
+  gap: 20px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #f3f0e1;
+  box-shadow: 2px 0px 12px -3px rgba(202, 199, 185, 0.86);
+}
+.inSeason .cards .card:hover {
+  background-color: rgba(202, 199, 185, 0.36);
+}
+.inSeason .cards .card .img {
+  height: auto;
+  padding-top: 20px;
+}
+.inSeason .cards .card .img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+.inSeason .cards .card .text {
+  line-height: 1.2;
+  padding: 20px;
+}
+.inSeason .cards .card .text h4 {
+  font-weight: 600;
+  padding-bottom: 10px;
+}/*# sourceMappingURL=home.css.map */

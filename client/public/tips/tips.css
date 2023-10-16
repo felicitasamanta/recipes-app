@@ -1,0 +1,39 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, sans-serif;
+  background-color: #fffef6;
+}
+
+.top {
+  padding-top: 50px;
+}
+.top h2 {
+  color: #647403;
+  font-size: 56px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c1c694;
+  text-transform: capitalize;
+}
+.top .filterArticles {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.top .filters {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tips ul {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.tips ul li {
+  flex-grow: 1;
+}/*# sourceMappingURL=tips.css.map */

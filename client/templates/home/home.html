@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog website</title>
+    {{{commonStyles}}}
+    <link rel="stylesheet" href="/home/home.css" />
+  </head>
+  <body>
+    {{{navigation}}}
+    <main>
+      <section class="hero">
+        {{#with tips.[0]}} {{>homeHeroTip}} {{/with}}
+      </section>
+
+      <section class="first">
+        <div class="wrapper sides">
+          <div class="left">
+            <h2>Gift guide for foodies</h2>
+            <div class="img">
+              <img src="/assets/images/box.jpg" />
+            </div>
+            <div class="inner">
+              <div class="buttonAndReadTime">
+                <button>Products</button>
+                <p id="readTime">5 min read</p>
+              </div>
+              <div class="cardBottom">
+                <div class="roundedImg">
+                  <img src="/assets/images/person1.jpg" />
+                </div>
+                <div class="personAndDate">
+                  <p>Peteer Pan</p>
+                  <p>March 20, 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="containers">
+              <div class="container">
+                <div class="img">
+                  <img src="/assets/images/pasta.jpg" />
+                </div>
+                <div class="card">
+                  <h3>Creamy Spaghetti</h3>
+                  <div class="inner">
+                    <div class="buttonAndReadTime">
+                      <button>Dinner</button>
+                      <p id="readTime">5 min read</p>
+                    </div>
+                    <div class="cardBottom">
+                      <div class="roundedImg">
+                        <img src="/assets/images/person2.jpg" />
+                      </div>
+                      <div class="personAndDate">
+                        <p>Dan Graper</p>
+                        <p>March 13, 2022</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="img">
+                  <img src="/assets/images/grapes.jpg" />
+                </div>
+                <div class="card">
+                  <h3>Are natural wines boring?</h3>
+                  <div class="inner">
+                    <div class="buttonAndReadTime">
+                      <button>Wine</button>
+                      <p id="readTime">10 min read</p>
+                    </div>
+                    <div class="cardBottom">
+                      <div class="roundedImg">
+                        <img src="/assets/images/person3.jpg" />
+                      </div>
+                      <div class="personAndDate">
+                        <p>Jane Baker</p>
+                        <p>March 16, 2022</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="img">
+                  <img src="/assets/images/pastaForDinner.jpg" />
+                </div>
+                <div class="card">
+                  <h3>Weekend dinner tips: pasta time!</h3>
+                  <div class="inner">
+                    <div class="buttonAndReadTime">
+                      <button>Dinner</button>
+                      <p id="readTime">8 min read</p>
+                    </div>
+                    <div class="cardBottom">
+                      <div class="roundedImg">
+                        <img src="/assets/images/person4.jpg" />
+                      </div>
+                      <div class="personAndDate">
+                        <p>John Linguini</p>
+                        <p>March 13, 2022</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="inMyKitchen">
+        <div class="wrapper">
+          <h2>IN MY<br /><span>KITCHEN</span></h2>
+          {{> categories}}
+        </div>
+      </section>
+      <section class="inSeason">
+        <div class="wrapper">
+          <h2>
+            IN<br />
+            <span>SEASON</span>
+          </h2>
+          {{> homeRecipes}}
+        </div>
+      </section>
+      {{{footer}}}
+    </main>
+    <script type="module" src="/common/footer/footer.js"></script>
+  </body>
+</html>

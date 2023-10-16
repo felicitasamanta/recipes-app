@@ -1,0 +1,149 @@
+@use "../common/variables" as *;
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+
+  .img {
+    object-fit: cover;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 70vh;
+    width: 100%;
+    transform: rotate(180deg);
+  }
+
+  .hero_overlay {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    height: 70vh;
+
+    .hero_content {
+      color: $content-background;
+      background-color: $base-color;
+      border-radius: $card-border-radius;
+      width: 350px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      position: absolute;
+      bottom: 50px;
+      left: 150px;
+
+      .description {
+        line-height: 1.1;
+        font-size: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid white;
+      }
+      .bottom {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+          color: white;
+          background-color: transparent;
+          border: 1px solid white;
+          border-radius: $button-border-radius;
+          outline: none;
+          padding: 5px 15px;
+          cursor: pointer;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+#review {
+  background-color: $light-background;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  color: $base-color;
+
+  #oneLine {
+    display: flex;
+    gap: 20px;
+
+    span {
+      font-size: 60px;
+    }
+
+    .right {
+      align-self: flex-end;
+    }
+  }
+
+  .review {
+    background-color: $colored-background;
+    max-width: 700px;
+    color: $base-color;
+    font-size: 24px;
+    padding: 25px 65px;
+    text-align: center;
+    border-radius: $card-border-radius;
+    line-height: 1.5;
+  }
+}
+
+#tips {
+  padding-top: 100px;
+  background-color: $light-background;
+  color: $base-color;
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .stepContainer {
+      width: 100%;
+      display: flex;
+      gap: 100px;
+
+      .step {
+        font-size: 50px;
+        font-weight: bold;
+        transform: translateY(-50%);
+        align-self: flex-start;
+      }
+
+      .information {
+        padding: 20px 0px;
+        border-top: 1px solid green;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin-right: 200px;
+
+        h3 {
+          font-size: 24px;
+          font-weight: bold;
+        }
+
+        .description {
+          margin-top: 20px;
+          margin-bottom: 40px;
+          background-color: $white-colored;
+          padding: 20px;
+          border-radius: $card-border-radius;
+          line-height: 1.3;
+          display: flex;
+          width: 480px;
+        }
+      }
+    }
+  }
+}

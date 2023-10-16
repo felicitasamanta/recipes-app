@@ -1,0 +1,47 @@
+@use "../common/variables" as *;
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: $content-background;
+  font-family: $font-family;
+}
+
+.top {
+  padding-top: 50px;
+  h2 {
+    color: $base-color;
+    font-size: 56px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $line;
+    text-transform: capitalize;
+  }
+
+  .filterRecipes {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filters {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+.recipes {
+  ul {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    li {
+      flex-grow: 1;
+    }
+  }
+}
